@@ -1,4 +1,3 @@
-
 lst = []
 for i in range(int(input())):
     l = []
@@ -21,14 +20,19 @@ for i in range(len(lst)):
         lst1.pop(score.index(m))
         score.remove(m)
 
-m = min(score)
+try:
+    m = min(score)
 
-ansind = []
-for i in range(len(score)):
-    if score[i] == m:
-        ansind.append(i)
+    ansind = []
+    for i in range(len(score)):
+        if score[i] == m:
+            ansind.append(i)
 
-ansind.reverse()
+    # ansind.reverse()
+    # print(ansind)
 
-for i in ansind:
-    print(lst1[i][0])
+    for i in ansind:
+        print(lst1[i][0])
+
+except:
+    print()

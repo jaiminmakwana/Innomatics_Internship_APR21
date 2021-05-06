@@ -8,11 +8,14 @@ if 1 < k < 1000:
     unilist = list(uniset)
 
     for i in unilist:
+        temp = 0
         count = 0
         for j in lst:
             if i == j:
                 count += 1
-        # print("i", i, " ", count)
-        if count == 1:
+                if count > 1:
+                    temp = 1
+                    break
+        if temp == 0:
             print(i)
             break
