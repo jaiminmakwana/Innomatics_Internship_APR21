@@ -27,4 +27,3 @@ for i in range(midrow, n):
     print(str2.center(m, '-'))
     temp -= 2
 
-### Program Continuous...
