@@ -1,4 +1,4 @@
-from math import atan2, degrees
+from math import atan2, degrees, atan
 
 ab = int(input())
 bc = int(input())
